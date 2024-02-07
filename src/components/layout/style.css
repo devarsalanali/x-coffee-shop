@@ -1,0 +1,125 @@
+.navbar {
+  background-color: #29152f;
+}
+.navbar-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+}
+
+.navbar .nav {
+  display: inline-flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-grow: 1;
+  gap: 12px;
+}
+
+.nav__Item {
+  color: #bfbfc3;
+  text-decoration: none;
+  font-family: 'Roboto' Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.logo {
+  width: 3rem;
+}
+.brand__container {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+}
+
+/* Sections */
+
+.container {
+  width: 1280px;
+  min-height: 50vh;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+.row {
+  display: flex;
+  gap: 20px;
+}
+.col {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.align-stretch {
+  align-items: stretch;
+}
+.align-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+
+.flex-grow {
+  flex-grow: 1;
+}
+/* Carousel Styling */
+.carousel-images {
+  position: relative;
+  border-radius: 10px;
+  height: 400px;
+  max-width: 650px;
+  margin: auto;
+  overflow: hidden;
+}
+.carousel-images img {
+  width: 99%;
+  height: 99%;
+  border-radius: 8px;
+  border: #ff00008e solid 2px;
+}
+.slide_direction {
+  display: flex;
+  justify-content: space-between;
+}
+.left,
+.right {
+  background-color: #fb666675;
+  color: #fff;
+  padding: 10px 8px 8px 13px;
+  margin: 0 20px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 10px;
+  height: 25px;
+  width: 25px;
+}
+.left {
+  left: 0;
+}
+.right {
+  right: 0;
+}
+.carousel-indicator {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.dot {
+  background-color: #333;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+.active {
+  background-color: #fa2020;
+}

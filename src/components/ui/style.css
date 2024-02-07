@@ -1,0 +1,48 @@
+.button {
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  border-radius: 12px;
+  padding: 0.4rem 0.8rem;
+}
+
+.button-icon svg {
+  font-size: 1.4rem;
+}
+
+.btn-primary {
+  border: 1px solid #bfbfc3;
+  background-color: #7740e2;
+}
+.btn-secondary {
+  border: 1px solid #bfbfc3;
+  background-color: #7669ce;
+}
+.btn-success {
+}
+.btn-danger {
+}
+.btn-outlined {
+  background-color: rgba(29, 42, 57, 0.3);
+  border: 1px solid #bfbfc3;
+}
+
+.input {
+  display: inline-flex;
+  gap: 12px;
+  align-items: center;
+  padding: 0.4rem 0.8rem;
+  background-color: rgba(29, 42, 57, 0.3);
+  border: 1px solid #bfbfc3;
+  color: #bfbfc3;
+  border-radius: 12px;
+  flex-grow: 0.5;
+}
+.input-field {
+  background-color: transparent;
+  border: none;
+  height: 2rem;
+  flex-grow: 1;
+  color: white;
+}
