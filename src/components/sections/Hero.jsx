@@ -1,12 +1,6 @@
 import React from 'react'
-import { Button } from '../ui'
-import { Carousel } from '../layout'
-
-import image1 from '../../assets/images/hero/slide-1.png'
-import image2 from '../../assets/images/hero/slide-2.png'
-import image3 from '../../assets/images/hero/slide-3.png'
-
-const images = [image1, image2, image3]
+import { Button, Carousel } from '../elements'
+import { images } from '../../data'
 
 export const Hero = () => {
   const handleClick = () => {}

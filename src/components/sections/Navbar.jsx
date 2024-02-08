@@ -1,6 +1,5 @@
-import './style.css'
 import React from 'react'
-import { Button, Input } from '../ui'
+import { Button, Input } from '../elements'
 import { AccountBalanceWalletOutlined, SearchSharp } from '@mui/icons-material'
 import { Link } from 'react-router-dom'
 import logo from '../../assets/images/logo.png'

@@ -1,4 +1,3 @@
-import './style.css'
 import { AnimatePresence, motion } from 'framer-motion'
 import { useState, useEffect } from 'react'
 import image1 from '../../assets/images/hero/slide-1.png'
@@ -50,15 +49,15 @@ export const Carousel = () => {
 
   return (
     <>
-      <AnimatePresence mode='popLayout' initial={false}>
+      <AnimatePresence mode='popsections' initial={false}>
         {visibleItems.map((item) => {
-          // The layout prop makes the elements change its position as soon as a new one is added
+          // The sections prop makes the elements change its position as soon as a new one is added
           // The key tells framer-motion that the elements changed its position
           return (
             <motion.div
               className='card'
               key={item.key}
-              layout
+              sections
               custom={{
                 direction,
                 position: () => {

@@ -1,4 +1,3 @@
-import './style.css'
 import React from 'react'
 
 export const Button = ({ label, variant, icon, onClick, disabled }) => {
