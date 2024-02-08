@@ -2,16 +2,16 @@ import React from 'react'
 import {
   Categories,
   Hero,
-  PopularNFTs,
-  TrendingNFTs,
+  PopularNfts,
+  TrendingNfts,
 } from '../components/sections'
 
 export const Home = () => {
   return (
     <div className='home'>
       <Hero />
-      <TrendingNFTs />
-      <PopularNFTs />
+      <TrendingNfts />
+      <PopularNfts />
       <Categories />
     </div>
   )

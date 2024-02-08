@@ -1,7 +1,7 @@
 import React from 'react'
 import { Table } from '../elements'
 
-export const TrendingNFTs = () => {
+export const TrendingNfts = () => {
   return (
     <div className='trending'>
       <div className='container'>

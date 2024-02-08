@@ -46,3 +46,127 @@
   flex-grow: 1;
   color: white;
 }
+
+/* Carousel Styling */
+.carousel-images {
+  position: relative;
+  border-radius: 10px;
+  height: 400px;
+  max-width: 650px;
+  margin: auto;
+  overflow: hidden;
+}
+.carousel-images img {
+  width: 99%;
+  height: 99%;
+  border-radius: 8px;
+  border: #ff00008e solid 2px;
+}
+.slide_direction {
+  display: flex;
+  justify-content: space-between;
+}
+.left,
+.right {
+  background-color: #fb666675;
+  color: #fff;
+  padding: 10px 8px 8px 13px;
+  margin: 0 20px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 10px;
+  height: 25px;
+  width: 25px;
+}
+.left {
+  left: 0;
+}
+.right {
+  right: 0;
+}
+.carousel-indicator {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.dot {
+  background-color: #333;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+.active {
+  background-color: #fa2020;
+}
+
+/* Divider */
+.divider {
+  border-style: solid;
+  border-color: #1d2a39;
+  border-width: 1px 0 0 0;
+}
+
+/* Social Icons */
+.shape-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  max-width: 30px;
+  max-height: 30px;
+  border-radius: 15px;
+}
+.outlined {
+  border: 1px solid white;
+}
+
+/* NFT Card */
+
+.nft-card {
+  background-color: #141b23;
+  border-radius: 12px;
+  max-width: 300px;
+  gap: 6px;
+  padding: 0.3rem;
+  border: 2px solid #00c9fa;
+  /* 7740E2 */
+}
+
+.nft-card__Image {
+  width: 300px;
+  height: 250px;
+  object-fit: cover;
+  object-position: center;
+}
+.nft-card__Title,
+.category-card__Title {
+  margin-left: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.nft-card__Creator {
+  margin-left: 6px;
+  font-size: 0.8rem;
+}
+
+.nft-card__Price {
+  background-color: #1d2a39;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Category Card */
+.category-card {
+  background-color: #141b23;
+  border-radius: 12px;
+  max-width: 300px;
+  gap: 6px;
+  padding: 0.3rem 0.3rem 1rem 0.3rem;
+  border: 1px solid #1d2a39;
+  text-align: center;
+}

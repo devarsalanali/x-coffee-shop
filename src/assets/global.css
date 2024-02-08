@@ -12,13 +12,14 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p {
   margin: 0;
 }
 
 h1 {
   font-size: 4rem;
-  line-height: 5rem;
+  line-height: 4.5rem;
 }
 h6 {
   font-size: 1.3rem;
@@ -28,4 +29,10 @@ h6 {
 
 .highlight {
   color: #758ce6;
+}
+
+p {
+  font-size: 0.9rem;
+  line-height: 1.4rem;
+  font-weight: 400;
 }
