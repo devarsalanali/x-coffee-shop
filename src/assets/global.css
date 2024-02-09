@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Poppins:wght@400;500;600;700;800&family=Roboto:wght@400;500;700;900&display=swap');
 body {
   background-color: #040b11;
+
   color: #f5f5f5;
   font-size: 16px;
   font-family: 'Poppins', Times, serif;
@@ -35,4 +36,32 @@ p {
   font-size: 0.9rem;
   line-height: 1.4rem;
   font-weight: 400;
+}
+
+/* Apply different positions to each spot using unique IDs */
+
+.blur-layer {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  border-radius: 50%;
+  background: #3863fd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(1000px);
+  text-align: center;
+}
+
+#spot1 {
+  top: 20%;
+  left: 30%;
+}
+
+#spot2 {
+  top: 50%;
+  left: 70%;
+}
+
+#spot3 {
+  top: 80%;
+  left: 50%;
 }
