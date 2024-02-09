@@ -1,6 +1,6 @@
 import React from 'react'
-import { CategoryCard } from '../elements'
-
+import { CategoryCard, Slider } from '../elements'
+import { categorySlides } from '../../data'
 export const Categories = () => {
   return (
     <div className='categories'>
@@ -9,10 +9,7 @@ export const Categories = () => {
           Explore <span className='highlight'>Categories</span>
         </h2>
         <div className='row'>
-          <CategoryCard />
-          <CategoryCard />
-          <CategoryCard />
-          <CategoryCard />
+          <Slider slides={categorySlides} />
         </div>
       </div>
     </div>

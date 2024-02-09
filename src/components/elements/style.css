@@ -129,11 +129,12 @@
 .nft-card {
   background-color: #141b23;
   border-radius: 12px;
-  max-width: 300px;
+  min-width: 300px;
   gap: 6px;
   padding: 0.3rem;
   border: 2px solid #00c9fa;
   /* 7740E2 */
+  pointer-events: none;
 }
 
 .nft-card__Image {
@@ -169,4 +170,89 @@
   padding: 0.3rem 0.3rem 1rem 0.3rem;
   border: 1px solid #1d2a39;
   text-align: center;
+}
+
+/* Trending Table Style */
+.MuiTable-root {
+  min-width: auto !important;
+}
+.MuiTableContainer-root {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+.table-head__Cell {
+  border-top: 1px solid #1d2a39 !important;
+  border-bottom: 1px solid #1d2a39 !important;
+  color: white !important;
+}
+
+.table-body__Cell {
+  border: none !important;
+}
+.table-body__Cell {
+  color: white !important;
+}
+
+.table-body__Row {
+  padding: 0 1rem !important;
+}
+.table-body__Row:hover {
+  background-color: #1d2a39 !important;
+  border-radius: 12px !important;
+}
+
+.table-body__Row:first-child {
+  background-color: #1d2a39 !important;
+  border-radius: 12px 0 0 12px !important;
+}
+.table-body__Row:last-child {
+  border-radius: 0 12px 12px 0 !important;
+}
+
+.imagebox {
+  display: inline-flex;
+  gap: 12px;
+  justify-content: flex-start;
+  align-items: center;
+}
+.imagebox img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* Tab style */
+.tab {
+  background-color: #141b23;
+  border-radius: 12px;
+  padding: 6px;
+  align-items: center;
+  max-width: fit-content;
+}
+.tab button {
+  color: #bfbfc3 !important;
+}
+.tab__Item {
+  padding: 6px 12px;
+  align-items: center;
+}
+
+.Mui-selected {
+  background-color: #1d2a39 !important;
+  border-radius: 12px !important;
+  color: white !important;
+  padding: 6px 12px;
+  align-items: center;
+  border: none !important;
+}
+
+/* Slider Style */
+.inner-slider {
+  display: flex;
+  gap: 20px;
+}
+.slider {
+  cursor: grab;
+  overflow: hidden;
 }
