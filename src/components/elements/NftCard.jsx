@@ -1,6 +1,8 @@
 import React from 'react'
-import { Button } from '.'
+import { Button } from './Button'
 import sampleNft from '../../assets/images/sample-nft.png'
+import './style.css'
+
 export const NftCard = () => {
   const handleBuy = () => {
     return

@@ -1,6 +1,7 @@
 import React from 'react'
-import { Button, Carousel } from '../elements'
-import { images } from '../../data'
+import { Button } from '../elements/Button'
+import { Carousel } from '../elements/Carousel'
+import './style.css'
 
 export const Hero = () => {
   const handleClick = () => {}
@@ -32,7 +33,7 @@ export const Hero = () => {
             />
           </div>
         </div>
-        <Carousel images={images} />
+        <Carousel />
       </div>
     </div>
   )

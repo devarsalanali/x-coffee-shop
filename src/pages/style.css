@@ -1,0 +1,80 @@
+.create {
+  min-height: 100vh;
+}
+form {
+  font-size: 14px;
+}
+form label {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.text-center {
+  text-align: center;
+}
+.box {
+  width: 300px;
+  height: 400px;
+  background-color: #1d2a39;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  padding: 1rem;
+}
+.box2 {
+  width: 300px;
+  height: auto;
+}
+.box span {
+  font-size: 12px;
+  text-align: center;
+}
+.col {
+  flex-grow: 1;
+}
+
+.p-12 {
+  padding: 12px;
+}
+.ptb5 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+textarea {
+  color: white;
+  background-color: #1d2a39;
+  height: 100px;
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.justify-end {
+  justify-content: end !important;
+}
+
+.button {
+  padding: 0.4rem 0.8rem;
+}
+
+.nft-card__Price span {
+  font-size: 14px !important;
+  font-weight: 700;
+}
+
+.w-300 {
+  width: 500px;
+  border: 1px solid #1d2a39;
+  align-items: flex-start;
+  padding: 12px;
+}
+
+.explore .container h6 {
+  font-size: 14px;
+  text-align: start;
+  font-weight: 700;
+  margin-bottom: 12px;
+}

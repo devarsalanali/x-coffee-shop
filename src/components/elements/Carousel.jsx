@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react'
 import image1 from '../../assets/images/hero/slide-1.png'
 import image2 from '../../assets/images/hero/slide-2.png'
 import image3 from '../../assets/images/hero/slide-3.png'
+import './style.css'
 
 export const Carousel = () => {
   const [[activeIndex, direction], setActiveIndex] = useState([0, 0])

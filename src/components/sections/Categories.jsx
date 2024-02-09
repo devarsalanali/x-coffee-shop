@@ -1,6 +1,17 @@
 import React from 'react'
-import { CategoryCard, Slider } from '../elements'
-import { categorySlides } from '../../data'
+import { Slider } from '../elements/Slider'
+import { CategoryCard } from '../elements/CategoryCard'
+import './style.css'
+
+export const categorySlides = [
+  <CategoryCard />,
+  <CategoryCard />,
+  <CategoryCard />,
+  <CategoryCard />,
+  <CategoryCard />,
+  <CategoryCard />,
+]
+
 export const Categories = () => {
   return (
     <div className='categories'>

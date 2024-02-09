@@ -1,5 +1,8 @@
 import React from 'react'
-import { Button, Input } from '../elements'
+import { Button } from '../elements/Button'
+import { Input } from '../elements/Input'
+import './style.css'
+
 import { AccountBalanceWalletOutlined, SearchSharp } from '@mui/icons-material'
 import { Link } from 'react-router-dom'
 import logo from '../../assets/images/logo.png'
@@ -18,10 +21,10 @@ export const Navbar = () => {
           </Link>
         </div>
         <div className='nav'>
-          <Link to='/' className='nav__Item'>
+          <Link to='/explore' className='nav__Item'>
             Explore
           </Link>
-          <Link to='/' className='nav__Item'>
+          <Link to='/create' className='nav__Item'>
             Create
           </Link>
           <Input

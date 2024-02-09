@@ -1,6 +1,32 @@
 import React from 'react'
-import { Button, ToggleTab, TrendingTable } from '../elements'
-import { trendTopOptions, dateOptions } from '../../data'
+import { TrendingTable } from '../elements/TrendingTable'
+import { Button } from '../elements/Button'
+import { ToggleTab } from '../elements/ToggleTab'
+import './style.css'
+
+const trendTopOptions = [
+  {
+    option: 'Trending',
+  },
+  {
+    option: 'Top',
+  },
+]
+const dateOptions = [
+  {
+    option: '24 hrs',
+  },
+  {
+    option: '3 days',
+  },
+  {
+    option: '1 week',
+  },
+  {
+    option: 'All time',
+  },
+]
+
 export const TrendingNfts = () => {
   return (
     <div className='trending'>
@@ -8,16 +34,10 @@ export const TrendingNfts = () => {
         <h2>
           Trending <span className='highlight'>NFTs</span>
         </h2>
-        <div className='row space-between'>
-          <div>
-            <ToggleTab options={trendTopOptions} />
-          </div>
-          <div>
-            <div className='row'>
-              <ToggleTab options={dateOptions} />
-              <Button label='View All' variant='primary' />
-            </div>
-          </div>
+        <div className='row space-between justify-center'>
+          <ToggleTab options={trendTopOptions} />
+          <ToggleTab options={dateOptions} />
+          <Button label='View All' variant='outlined' />
         </div>
 
         <div className='row'>

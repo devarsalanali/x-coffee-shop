@@ -1,10 +1,10 @@
 import React from 'react'
-import {
-  Categories,
-  Hero,
-  PopularNfts,
-  TrendingNfts,
-} from '../components/sections'
+import './style.css'
+
+import { Categories } from '../components/sections/Categories'
+import { TrendingNfts } from '../components/sections/TrendingNfts'
+import { PopularNfts } from '../components/sections/PopularNfts'
+import { Hero } from '../components/sections/Hero'
 
 export const Home = () => {
   return (

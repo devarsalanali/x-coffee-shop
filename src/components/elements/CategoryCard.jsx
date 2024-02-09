@@ -1,5 +1,6 @@
 import React from 'react'
 import sampleCategoryImage from '../../assets/images/sample-category.png'
+import './style.css'
 
 export const CategoryCard = () => {
   return (

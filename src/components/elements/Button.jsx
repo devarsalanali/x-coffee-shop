@@ -1,4 +1,5 @@
 import React from 'react'
+import './style.css'
 
 export const Button = ({ label, variant, icon, onClick, disabled }) => {
   const buttonTypes = {
@@ -13,9 +14,7 @@ export const Button = ({ label, variant, icon, onClick, disabled }) => {
     <span className='button-icon'>{icon}</span>
   ) : null
 
-  const buttonText = label ? ( // Render the text if provided
-    <span className='button-text'>{label}</span>
-  ) : null
+  const buttonText = label // Render the text if provided
 
   return (
     <button

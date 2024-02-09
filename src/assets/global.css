@@ -41,27 +41,47 @@ p {
 /* Apply different positions to each spot using unique IDs */
 
 .blur-layer {
-  width: 100px;
-  height: 100px;
   position: absolute;
+  background-color: #3863fd;
+  width: 344px;
+  height: 344px;
   border-radius: 50%;
-  background: #3863fd;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(1000px);
-  text-align: center;
+  filter: blur(400px);
+  opacity: 0.5;
 }
 
 #spot1 {
   top: 20%;
-  left: 30%;
+  left: 5%;
+  z-index: 0;
 }
 
 #spot2 {
   top: 50%;
   left: 70%;
+  z-index: 0;
 }
 
 #spot3 {
   top: 80%;
   left: 50%;
+  z-index: 0;
+}
+
+#spot4 {
+  top: 80%;
+  left: 5%;
+  z-index: 0;
+}
+
+#spot5 {
+  top: 80%;
+  left: 70%;
+  z-index: 0;
+}
+
+#spot6 {
+  bottom: 0;
+  left: 10%;
+  z-index: 0;
 }

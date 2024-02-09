@@ -1,6 +1,17 @@
 import React from 'react'
-import { Slider } from '../elements'
-import { popularSlides } from '../../data'
+import { Slider } from '../elements/Slider'
+import { NftCard } from '../elements/NftCard'
+import './style.css'
+
+export const popularSlides = [
+  <NftCard />,
+  <NftCard />,
+  <NftCard />,
+  <NftCard />,
+  <NftCard />,
+  <NftCard />,
+]
+
 export const PopularNfts = () => {
   return (
     <div className='popular'>
