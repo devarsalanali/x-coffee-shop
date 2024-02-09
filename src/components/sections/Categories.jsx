@@ -1,6 +1,6 @@
 import React from 'react'
-import { Slider } from '../elements/Slider'
-import { CategoryCard } from '../elements/CategoryCard'
+import Slider from '../elements/Slider'
+import CategoryCard from '../elements/CategoryCard'
 import './style.css'
 
 export const categorySlides = [
@@ -12,7 +12,7 @@ export const categorySlides = [
   <CategoryCard />,
 ]
 
-export const Categories = () => {
+export default function Categories() {
   return (
     <div className='categories'>
       <div className='container'>

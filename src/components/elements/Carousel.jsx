@@ -5,7 +5,7 @@ import image2 from '../../assets/images/hero/slide-2.png'
 import image3 from '../../assets/images/hero/slide-3.png'
 import './style.css'
 
-export const Carousel = () => {
+export default function Carousel() {
   const [[activeIndex, direction], setActiveIndex] = useState([0, 0])
   const items = [
     {

@@ -1,12 +1,12 @@
 import React from 'react'
-import { Button } from '../elements/Button'
-import { Input } from '../elements/Input'
+import Button from '../elements/Button'
+import Input from '../elements/Input'
 import './style.css'
 
 import { AccountBalanceWalletOutlined, SearchSharp } from '@mui/icons-material'
 import { Link } from 'react-router-dom'
 import logo from '../../assets/images/logo.png'
-export const Navbar = () => {
+export default function Navbar() {
   const connect = () => {
     console.log('Connected')
   }

@@ -1,9 +1,9 @@
 import React from 'react'
-import { Divider } from '../elements/Divider'
-import { SocialIcons } from '../elements/SocialIcons'
+import Divider from '../elements/Divider'
+import SocialIcons from '../elements/SocialIcons'
 import './style.css'
 
-export const Footer = () => {
+export default function Footer() {
   return (
     <div className='footer'>
       <div className='container col'>

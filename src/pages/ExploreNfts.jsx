@@ -1,7 +1,7 @@
 import React from 'react'
-import { Input } from '../components/elements/Input'
-import { ToggleTab } from '../components/elements/ToggleTab'
-import { NftCard } from '../components/elements/NftCard'
+import Input from '../components/elements/Input'
+import ToggleTab from '../components/elements/ToggleTab'
+import NftCard from '../components/elements/NftCard'
 import './style.css'
 
 const dateOptions = [
@@ -19,7 +19,7 @@ const dateOptions = [
   },
 ]
 
-export const ExploreNfts = () => {
+export default function ExploreNfts() {
   return (
     <div className='explore'>
       <div className='container'>

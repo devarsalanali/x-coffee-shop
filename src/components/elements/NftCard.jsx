@@ -1,9 +1,9 @@
 import React from 'react'
-import { Button } from './Button'
+import Button from './Button'
 import sampleNft from '../../assets/images/sample-nft.png'
 import './style.css'
 
-export const NftCard = () => {
+export default function NftCard() {
   const handleBuy = () => {
     return
   }

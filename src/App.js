@@ -1,5 +1,5 @@
-import { Navbar } from './components/sections/Navbar'
-import { Footer } from './components/sections/Footer'
+import Navbar from './components/sections/Navbar'
+import Footer from './components/sections/Footer'
 import { Outlet } from 'react-router-dom'
 
 export default function App() {

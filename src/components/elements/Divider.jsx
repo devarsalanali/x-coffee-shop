@@ -1,6 +1,6 @@
 import React from 'react'
 import './style.css'
 
-export const Divider = () => {
+export default function Divider() {
   return <div className='divider'></div>
 }

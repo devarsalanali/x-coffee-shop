@@ -1,9 +1,9 @@
 import React from 'react'
-import { Button } from '../elements/Button'
-import { Carousel } from '../elements/Carousel'
+import Button from '../elements/Button'
+import Carousel from '../elements/Carousel'
 import './style.css'
 
-export const Hero = () => {
+export default function Hero() {
   const handleClick = () => {}
   return (
     <div className='hero'>

@@ -1,7 +1,7 @@
 import React from 'react'
 import './style.css'
 
-export const Input = ({
+export default function Input({
   type,
   name,
   placeholder,
@@ -9,7 +9,7 @@ export const Input = ({
   id,
   onChange,
   icon,
-}) => {
+}) {
   const inputIcon = icon // Render the icon if provided
     ? icon
     : null

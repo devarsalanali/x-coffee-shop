@@ -1,8 +1,8 @@
 import React from 'react'
-import { Button } from '../components/elements/Button'
+import Button from '../components/elements/Button'
 import './style.css'
 
-export const CreateNft = () => {
+export default function CreatNft() {
   return (
     <div className='create ptb5'>
       <div className='container '>

@@ -4,7 +4,7 @@ import Tab from '@mui/material/Tab'
 import Box from '@mui/material/Box'
 import './style.css'
 
-export const ToggleTab = ({ options }) => {
+export default function ToggleTab({ options }) {
   const [value, setValue] = React.useState(1)
 
   const handleChange = (event, newValue) => {

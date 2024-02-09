@@ -1,7 +1,7 @@
 import React from 'react'
 import './style.css'
 
-export const Button = ({ label, variant, icon, onClick, disabled }) => {
+export default function Button({ label, variant, icon, onClick, disabled }) {
   const buttonTypes = {
     primary: 'btn-primary',
     secondary: 'btn-secondary',

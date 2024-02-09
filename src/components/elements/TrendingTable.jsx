@@ -55,7 +55,7 @@ const rows = [
   },
 ]
 
-export const TrendingTable = () => {
+export default function TrendingTable() {
   return (
     <TableContainer component={Paper}>
       <Table sx={{ minWidth: 650 }} aria-label='simple table'>

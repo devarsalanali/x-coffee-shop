@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import { motion } from 'framer-motion'
 import './style.css'
 
-export const Slider = ({ slides }) => {
+export default function Slider({ slides }) {
   const [width, setWidth] = useState()
   const slider = useRef()
 

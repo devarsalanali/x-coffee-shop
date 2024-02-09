@@ -1,6 +1,6 @@
 import React from 'react'
-import { Slider } from '../elements/Slider'
-import { NftCard } from '../elements/NftCard'
+import Slider from '../elements/Slider'
+import NftCard from '../elements/NftCard'
 import './style.css'
 
 export const popularSlides = [
@@ -12,7 +12,7 @@ export const popularSlides = [
   <NftCard />,
 ]
 
-export const PopularNfts = () => {
+export default function PopularNfts() {
   return (
     <div className='popular'>
       <div className='container'>

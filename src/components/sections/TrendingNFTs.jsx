@@ -1,7 +1,7 @@
 import React from 'react'
-import { TrendingTable } from '../elements/TrendingTable'
-import { Button } from '../elements/Button'
-import { ToggleTab } from '../elements/ToggleTab'
+import TrendingTable from '../elements/TrendingTable'
+import Button from '../elements/Button'
+import ToggleTab from '../elements/ToggleTab'
 import './style.css'
 
 const trendTopOptions = [
@@ -27,7 +27,7 @@ const dateOptions = [
   },
 ]
 
-export const TrendingNfts = () => {
+export default function TrendingNfts() {
   return (
     <div className='trending'>
       <div className='container'>
