@@ -17,7 +17,7 @@ export default function Navbar() {
         <div className='brand'>
           <Link to='/' className='brand__container'>
             <img src={logo} alt='Logo' className='logo' />
-            <span>Coffee Shop X</span>
+            <span>CoffeeShopX</span>
           </Link>
         </div>
         <div className='nav'>
