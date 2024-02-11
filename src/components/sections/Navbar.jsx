@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Button from '../elements/Button'
 import Input from '../elements/Input'
 import './style.css'
@@ -6,21 +6,51 @@ import './style.css'
 import { AccountBalanceWalletOutlined, SearchSharp } from '@mui/icons-material'
 import { Link } from 'react-router-dom'
 import logo from '../../assets/images/logo.png'
+
 export default function Navbar() {
+  const [isOpen, setIsOpen] = useState(false)
+  const toggleOpen = () => {
+    setIsOpen(!isOpen)
+  }
+
   const connect = () => {
     console.log('Connected')
   }
 
   return (
-    <div className='navbar'>
-      <div className='navbar-container'>
+    <header className='navbar'>
+      <nav className='navbar-container'>
         <div className='brand'>
           <Link to='/' className='brand__container'>
             <img src={logo} alt='Logo' className='logo' />
             <span>CoffeeShopX</span>
           </Link>
         </div>
-        <div className='nav'>
+        <button
+          className='toggle'
+          type='button'
+          aria-controls='navbar-default'
+          onClick={toggleOpen}
+        >
+          {/* <span className='sr-only'>Open main menu</span> */}
+          <svg
+            className='w-5 h-5'
+            aria-hidden='true'
+            xmlns='http://www.w3.org/2000/svg'
+            fill='none'
+            viewBox='0 0 17 14'
+          >
+            <path
+              stroke='currentColor'
+              strokeLinecap='round'
+              strokeLinejoin='round'
+              strokeWidth='2'
+              d='M1 1h15M1 7h15M1 13h15'
+            />
+          </svg>
+        </button>
+
+        <div id='navbar-default' className={`${!isOpen ? 'hidden' : 'nav'}`}>
           <Link to='/explore' className='nav__Item'>
             Explore
           </Link>
@@ -35,16 +65,16 @@ export default function Navbar() {
             icon={<SearchSharp />}
             onChange={connect}
           />
+          <div className='cta'>
+            <Button
+              label='Connect Wallet'
+              variant='outlined'
+              icon={<AccountBalanceWalletOutlined />}
+              onClick={connect}
+            />
+          </div>
         </div>
-        <div className='cta'>
-          <Button
-            label='Connect Wallet'
-            variant='outlined'
-            icon={<AccountBalanceWalletOutlined />}
-            onClick={connect}
-          />
-        </div>
-      </div>
-    </div>
+      </nav>
+    </header>
   )
 }

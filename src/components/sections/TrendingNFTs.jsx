@@ -40,7 +40,7 @@ export default function TrendingNfts() {
           <Button label='View All' variant='outlined' />
         </div>
 
-        <div className='row'>
+        <div className='row table-row'>
           <TrendingTable />
           <TrendingTable />
         </div>

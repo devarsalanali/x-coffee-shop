@@ -49,7 +49,7 @@ export default function Carousel() {
   }, [activeIndex])
 
   return (
-    <>
+    <div style={{ display: 'flex' }}>
       <AnimatePresence mode='popsections' initial={false}>
         {visibleItems.map((item) => {
           // The sections prop makes the elements change its position as soon as a new one is added
@@ -86,7 +86,7 @@ export default function Carousel() {
         <motion.button onClick={() => handleClick(-1)}></motion.button>
         <motion.button onClick={() => handleClick(1)}></motion.button>
       </div> */}
-    </>
+    </div>
   )
 }
 
