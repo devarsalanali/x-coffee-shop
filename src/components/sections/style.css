@@ -123,7 +123,8 @@
   }
 
   .button {
-    width: -webkit-fill-available;
+    min-width: fit-content;
+    justify-content: center;
     padding: 0.2rem 0.4rem;
   }
 
@@ -183,14 +184,117 @@
     z-index: 999;
   }
 
-  .create .container {
-    width: 80vw;
+  .create {
+    min-height: 100% !important;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  .create .container,
+  .create .container .row {
+    width: 100%;
   }
   .create .container .row {
+    padding: 6px;
+  }
+  .create-form .row .col {
+    align-items: flex-start;
+  }
+  .create-form .row,
+  .create-form .row .col {
+    width: fit-content !important;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .create-form .row .justify-center {
+    align-items: baseline !important;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .navbar,
+  .nav,
+  .create,
+  .explore,
+  .footer {
+    overflow-x: hidden;
+    max-width: 400px;
+  }
+  .create .container .row {
+    width: 100%;
+    flex-direction: column !important;
+  }
+  .box {
+    width: 300px;
+    height: 200px;
+  }
+  .footer .container .row {
+    width: 100%;
+    flex-direction: column !important;
+  }
+  .footer .container .row .col {
+    width: 100%;
+    padding: 6px;
+  }
+  .footer .container .divider {
+    width: 100%;
+  }
+  .info,
+  .footer-copyrights,
+  .footer-social {
+    min-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+  .footer-copyrights p {
+    text-align: center;
+  }
+  .footer-menu li,
+  .info p {
+    text-align: center;
+  }
+  .imagebox img {
+    width: 50px;
+    height: 50px;
+  }
+  .imagebox span {
+    font-size: 11px;
+  }
+
+  .MuiTableCell-root {
+    padding: 6px 6px !important;
+    font-size: 11px !important;
+  }
+  .MuiTabs-root {
+    min-height: 38px !important;
+  }
+  .MuiBox-root {
+    max-width: fit-content !important;
+  }
+  .MuiButtonBase-root {
+    padding: 12px !important;
+    min-width: auto !important;
+    min-height: 30px !important;
+  }
+  .trending .container .row {
     flex-direction: column;
+    align-items: center;
+  }
+  .button {
+    width: fit-content;
+    justify-content: center;
+  }
+  .explore .container {
     width: 100%;
   }
-  .create .container .row .col {
-    width: 100%;
+  .explore .container .row {
+    flex-direction: column !important;
+    align-items: center;
   }
+}
+
+.button {
+  min-width: fit-content;
+  justify-content: center;
+  padding: 0.2rem 0.4rem;
 }

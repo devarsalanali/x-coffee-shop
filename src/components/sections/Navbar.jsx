@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom'
 import logo from '../../assets/images/logo.png'
 
 export default function Navbar() {
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(true)
   const toggleOpen = () => {
     setIsOpen(!isOpen)
   }
@@ -50,7 +50,7 @@ export default function Navbar() {
           </svg>
         </button>
 
-        <div id='navbar-default' className={`${!isOpen ? 'hidden' : 'nav'}`}>
+        <div id='navbar-default' className={` nav ${!isOpen ? 'hidden' : ''} `}>
           <Link to='/explore' className='nav__Item'>
             Explore
           </Link>

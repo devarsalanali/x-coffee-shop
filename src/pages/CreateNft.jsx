@@ -50,7 +50,7 @@ export default function CreatNft() {
             </div>
           </div>
           <div className='col p-12'>
-            <form>
+            <form className='create-form'>
               <div className='row p-12'>
                 <div className='col p-12'>
                   <label htmlFor='name'>Name</label>
